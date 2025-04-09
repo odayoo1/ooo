@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
+  <title>موقعي الشخصي</title>
+  <style>
+    body {
+           font-family: 'Cairo', sans-serif;
+           color: #000000;
+     background-color: #95caff;
+           text-align: center;
+           background: linear-gradient(to right);
+           margin: 0;
+           padding: 0;
+           direction: rtl;
+       }
+       header {
+           background: linear-gradient(90deg, #343a40, #007BFF);
+           color: white;
+           padding: 50px;
+           font-size: 36px;
+           font-weight: bold;
+           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+       }
+       .container {
+           max-width: 1100px;
+           margin: auto;
+           padding: 20px;
+       }
+       section {
+           margin: 30px 0;
+           padding: 40px;
+           background: white;
+           border-radius: 20px;
+           box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+           transition: transform 0.3s ease;
+       }
+       section:hover {
+           transform: scale(1.015);
+       }
+       button {
+           background: linear-gradient(90deg, #007BFF, #0056b3);
+           color: white;
+           border: none;
+           padding: 15px 35px;
+           font-size: 20px;
+           cursor: pointer;
+           border-radius: 10px;
+           transition: 0.3s;
+           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+       }
+       button:hover {
+           background: linear-gradient(90deg, #0056b3, #003d7a);
+           transform: translateY(-3px);
+       }
+       footer {
+           background-color: #212529;
+           color: white;
+           padding: 25px;
+           margin-top: 40px;
+           font-size: 18px;
+       }
+       
+       .profile-img {
+   width: 190px;
+   height: 190px;
+   max-width: 100%;
+   border-radius: 50%;
+   border: 6px solid #007BFF;
+   margin-bottom: 20px;
+   object-fit: cover;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+       .social-links a {
+           margin: 10px;
+           text-decoration: none;
+           color: #007BFF;
+           font-size: 26px;
+           transition: color 0.3s;
+       }
+       .social-links a:hover {
+           color: #0056b3;
+       }
+       a.certificate-btn {
+           display: inline-block;
+           background: #28a745;
+           color: white;
+           padding: 14px 28px;
+           border-radius: 12px;
+           font-weight: bold;
+           text-decoration: none;
+           margin-top: 20px;
+           transition: 0.3s;
+       }
+       .cert-title {
+  font-size: 17px;
+  color: #9cc0e4;
+  background-color: #1b3987;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.cert-title:hover {
+  background-color: #d0dce4;
+}
+
+       a.certificate-btn:hover {
+           background-color: #218838;
+       }
+       .certificate-img {
+   width: 100%;
+   max-width: 1000px; /* يمكنك تعديل هذا الرقم حسب الحاجة */
+   height: auto;
+   display: block;
+   margin: 0 auto;
+}
+ </style>
+ <style>
+  @media (max-width: 768px) {
+    header {
+      font-size: 24px;
+      padding: 30px;
+    }
+  
+    section {
+      padding: 20px;
+    }
+  
+    .certificate-img {
+      width: 100%;
+    }
+  
+    .profile-img {
+      width: 140px;
+      height: 140px;
+    }
+  
+    button {
+      font-size: 18px;
+      padding: 12px 25px;
+    }
+  }
+  </style>
+  
+</head>
+<body>
+  <header>مرحبًا بك في موقعي الشخصي</header>
+
+  <div class="container">
+    <section>
+      <img src="c:\Users\Ezz\Desktop\photo_٢٠٢٥-٠٤-٠٩_٠٢-٢٩-٥٧.jpg" alt="صورتي الشخصية" class="profile-img">
+      <h2>من أنا؟</h2>
+      <p>أنا مطور ويب مبدع، يمكنني تحديث وتصميم مواقع ويب مميزة (كذلك اعمل في مجال السفر و السياحه)</p>
+    </section>
+
+    <section>
+      <h2>مشاريعي</h2>
+      <p>تحت التطوير والعمل</p>
+    </section>
+
+    <section>
+      <h2>تواصل معي</h2>
+      <p>لا تتردد في التواصل معي عبر القنوات التالية:</p>
+      <div class="social-links">
+        <!-- <a href="#">🔗 فيسبوك</a> -->
+        <!-- <a href="#">🔗 تويتر</a>
+        <a href="#">🔗 لينكد إن</a> -->
+        <a href="https://wa.me/+201027153856">🔗واتساب</a>
+      </div>
+      <button onclick="showMessage()">اتصل بي</button>
+    </section>
+
+    <section class="certificates-section">
+      <h2>الاعتمادات والشهادات</h2>
+      <p>فخور بحصولي على شهادة مشاركة في مسار سقيا ضمن برنامج العمل التطوعي.</p>
+    
+      <div class="certificates-gallery">
+    
+        <div class="certificate-block">
+          <h3 class="cert-title">📜 شهادة HTML & CSS - باللغة العربية</h3>
+          <img src="c:\Users\Ezz\Desktop\54c06e59.jpg" alt="شهادة HTML & CSS - عربي" class="certificate-img">
+        </div>
+    
+        <div class="certificate-block">
+          <h3 class="cert-title">📜 HTML & CSS Certificate - English Version</h3>
+          <img src="c:\Users\Ezz\Desktop\63c4ddb8.jpg" alt="HTML & CSS Certificate - English" class="certificate-img">
+        </div>
+    
+      </div>
+    </section>
+    
+  </div>
+
+  <footer>
+    &copy; 2025 جميع الحقوق محفوظة | تصميم وبرمجة بإتقان
+  </footer>
+
+  <script>
+    function showMessage() {
+      alert("تحت العمل:)");
+    }
+  </script>
+</body>
+</html>
